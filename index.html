@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Expense Tracker ₹</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <aside class="sidebar">
+
+      <!-- Logo -->
+      <div class="logo">
+        <img src="Smart Expense Tracker.png" alt="Expense Tracker Logo">
+      </div>
+
+      <h1 class="title">Smart <span>Expense Tracker</span></h1>
+
+      <!-- Summary -->
+      <div class="summary">
+        <p>Total Balance</p>
+        <h2 id="balance">₹0</h2>
+
+        <div class="row">
+          <span>Income</span>
+          <span class="income" id="income">₹0</span>
+        </div>
+        <div class="row">
+          <span>Expense</span>
+          <span class="expense" id="expense">₹0</span>
+        </div>
+      </div>
+
+      <!-- Add Transaction Form -->
+      <form id="form">
+        <select id="type">
+          <option>Income</option>
+          <option>Expense</option>
+        </select>
+
+        <input type="number" id="amount" placeholder="Amount ₹" required>
+        <input type="date" id="date" required>
+        <input list="categories" id="category" placeholder="Category" required>
+
+        <datalist id="categories">
+          <option value="Food">
+          <option value="Rent">
+          <option value="Travel">
+          <option value="Shopping">
+          <option value="Salary">
+          <option value="Bills">
+        </datalist>
+
+        <button type="submit">Add Transaction</button>
+      </form>
+
+      <div class="alert" id="alert"></div>
+
+      <!-- Clear All -->
+      <button id="clearAll" class="clear-btn">Clear All Transactions</button>
+
+    </aside>
+
+    <main class="content">
+      <h2>Transactions</h2>
+
+      <!-- Filters -->
+      <div class="filters">
+        <input type="text" id="searchCategory" placeholder="Search Category">
+
+        <select id="dayFilter">
+          <option value="">All Days</option>
+        </select>
+
+        <select id="weekFilter">
+          <option value="">All Weeks</option>
+          <option value="1">Week 1</option>
+          <option value="2">Week 2</option>
+          <option value="3">Week 3</option>
+          <option value="4">Week 4</option>
+          <option value="5">Week 5</option>
+        </select>
+
+        <select id="monthFilter">
+          <option value="">All Months</option>
+          <option value="1">January</option>
+          <option value="2">February</option>
+          <option value="3">March</option>
+          <option value="4">April</option>
+          <option value="5">May</option>
+          <option value="6">June</option>
+          <option value="7">July</option>
+          <option value="8">August</option>
+          <option value="9">September</option>
+          <option value="10">October</option>
+          <option value="11">November</option>
+          <option value="12">December</option>
+        </select>
+
+        <select id="yearFilter">
+          <option value="">All Years</option>
+        </select>
+      </div>
+
+      <!-- Transaction List -->
+      <ul id="list"></ul>
+
+      <!-- Insights -->
+      <div class="insights">
+        <h3>📊 Smart Insights</h3>
+        <p id="topCategory">Top Expense: —</p>
+        <p id="savingStatus">Savings: —</p>
+      </div>
+    </main>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
