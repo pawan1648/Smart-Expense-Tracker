@@ -17,7 +17,9 @@ Clear All – Reset all transactions with one click.
 
 Modern UI – Dark theme, responsive layout, and clean design.
 
+
 Tech Stack:
+
 Frontend: HTML5, CSS3, JavaScript (Vanilla JS)
 
 Design: Responsive grid layout, dark theme
