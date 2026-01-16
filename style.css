@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, sans-serif;
+}
+
+body {
+  background: #0a0a0a;
+  color: #fff;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  gap: 20px;
+}
+
+.sidebar, .content {
+  background: #141414;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.logo img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+.title span {
+  color: #22c55e;
+}
+
+.summary h2 {
+  margin: 10px 0;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin: 6px 0;
+}
+
+.income { color: #22c55e; }
+.expense { color: #ef4444; }
+
+form {
+  display: grid;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+input, select, button {
+  padding: 10px;
+  background: #1f1f1f;
+  border: 1px solid #333;
+  color: white;
+  border-radius: 8px;
+}
+
+button {
+  background: #22c55e;
+  color: black;
+  cursor: pointer;
+}
+
+.clear-btn {
+  margin-top: 10px;
+  width: 100%;
+  background: #ef4444;
+  color: white;
+}
+
+.alert {
+  margin-top: 12px;
+  color: orange;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  background: #1f1f1f;
+  padding: 12px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.insights {
+  margin-top: 20px;
+  background: #1a1a1a;
+  padding: 16px;
+  border-radius: 10px;
+}
+
+.filters {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.filters input,
+.filters select {
+  flex: 1;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #333;
+  background: #1f1f1f;
+  color: white;
+}
